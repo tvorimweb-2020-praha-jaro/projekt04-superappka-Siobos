@@ -7,7 +7,6 @@ html { box-sizing: border-box; }
  sede pozadi      #e5e5e5
  svetle fialova   #48418e
  tmave fialova    #25133d
-
  POUZITE PISMO
  Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
  https://fonts.google.com/specimen/Roboto
@@ -23,11 +22,98 @@ body {
     line-height: 1.5;
 }
 
+h1 {
+    font-size: 65px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin: 5px 5px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'News Cycle', sans-serif;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #48418e;
+
+}
+
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    width: 960px;  /* obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.top ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 10px 10px 10px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.app {
+    font-family: 'Heebo', sans-serif;
+    background-image: url("images/pozadi.jpg");
+    color: white;
+    width: 960px; 
+    height: 400px; 
+    position: relative;
+    padding: 20px 10px 10px 20px;
+   
+}
+
+.app ul li {
+    display: inline-block;
+}
+
+.stazeni,
+.informace  {
+    border: 1px white solid;
+    border-radius: 6%;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.stazeni {
+    background-color: #48418e;
+    padding: 12px 7px 12px 7px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 2px 5px 10px darkslategray;
+}
+
+.informace {
+    background-color: transparent;
+    padding: 12px 7px 12px 7px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 2px 5px 10px darkslategray;    
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.telefon {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    size: 60%;
+}
+
+.bottom {
+    display: flex;
+    width: 960px;
+    margin-top: 10px; 
+    text-align: center;
+}
